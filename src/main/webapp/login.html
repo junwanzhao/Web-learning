@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link href="./css/main.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #93b5cf;
+            background-image: url("./images/bg.jpeg");
+            background-size: 100% 100%;
+        }
+
+        .container {
+            width: 40%;
+            background-color: #83C3F4;
+            margin: 170px auto;
+            padding: 10px 50px;
+        }
+
+        .container h2 {
+            text-align: center;
+            /*background-color: red;*/
+        }
+
+        #login-btn {
+            /*background-color: red;*/
+            width: 50%;
+            text-align: center;
+            margin: 0 120px;
+        }
+
+        .group {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>用户登录</h2>
+    <form action="/login" method="post">
+        <div class="group">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">账号</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" value="admin" name="account"
+                       aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">密码</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" value="111" name="password">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">记住我</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info" id="login-btn">登录</button>
+    </form>
+</div>
+
+</body>
+</html>
